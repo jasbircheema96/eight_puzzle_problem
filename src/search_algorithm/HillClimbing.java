@@ -27,6 +27,4 @@ public class HillClimbing {
 			return cost;
 		return Constants.INFINITY;
 	}
-
-
 }

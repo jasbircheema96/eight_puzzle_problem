@@ -32,6 +32,7 @@ public class App {
 			for(int i=1;i<=n;i++) {
 				State state=new State();
 				state.randomlyInitialize();
+				System.out.println(state.distanceFromGoal());
 				
 				cost1=HillClimbing.run(state);
 				cost2=HillClimbingSteepestAscent.run(state);
@@ -72,6 +73,7 @@ public class App {
 				else 
 					fileWriter.write("NA\t");
 				
+				fileWriter.write(state.distanceFromGoal()+"\t");
 				fileWriter.write("\n");
 			}
 			
